@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+requests
+chromadb
+sentence-transformers
+rank-bm25
+pypdf
