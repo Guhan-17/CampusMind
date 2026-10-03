@@ -1,0 +1,10 @@
+LIBRARY INFORMATION
+
+Students can use the college library to access
+academic books and learning resources.
+
+Students should return borrowed books within the
+specified period.
+
+Students must follow library rules and maintain
+silence inside the library.

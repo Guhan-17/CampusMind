@@ -1,0 +1,26 @@
+[
+  {
+    "question": "When should I pay my college fees?",
+    "expected_document": "fees.txt"
+  },
+  {
+    "question": "How can I pay my semester fees?",
+    "expected_document": "fees.txt"
+  },
+  {
+    "question": "What should I carry to the examination?",
+    "expected_document": "examination.txt"
+  },
+  {
+    "question": "Can students use the college library?",
+    "expected_document": "library.txt"
+  },
+  {
+    "question": "What is available in the hostel?",
+    "expected_document": "hostel.txt"
+  },
+  {
+    "question": "What information is available about placements?",
+    "expected_document": "placement.txt"
+  }
+]
