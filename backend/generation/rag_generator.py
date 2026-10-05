@@ -10,15 +10,16 @@ class RAGGenerator:
 
     def __init__(self):
 
-        self.ollama_url = os.getenv(
-            "OLLAMA_URL",
-            "http://localhost:11434/api/generate"
-        )
+        self.api_key = os.getenv("GROQ_API_KEY")
 
-        self.model = os.getenv(
-            "OLLAMA_MODEL",
-            "llama3.2:3b"
-        )
+        self.url = "https://api.groq.com/openai/v1/chat/completions"
+
+        self.model = "llama-3.1-8b-instant"
+
+        if not self.api_key:
+            raise ValueError(
+                "GROQ_API_KEY is not configured."
+            )
 
     def build_prompt(self, question, retrieved_results):
 
@@ -63,11 +64,21 @@ ANSWER:
     def generate_answer(self, prompt):
 
         response = requests.post(
-            self.ollama_url,
+            self.url,
+            headers={
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json"
+            },
             json={
                 "model": self.model,
-                "prompt": prompt,
-                "stream": False
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                "temperature": 0.2,
+                "max_tokens": 300
             },
             timeout=60
         )
@@ -76,4 +87,4 @@ ANSWER:
 
         data = response.json()
 
-        return data["response"].strip()
+        return data["choices"][0]["message"]["content"].strip()
