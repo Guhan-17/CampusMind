@@ -1,0 +1,132 @@
+[
+    {
+        "chunk_id": "C001",
+        "document": "academic_calendar.txt",
+        "text": "ACADEMIC CALENDAR INFORMATION The academic calendar contains important academic dates for students."
+    },
+    {
+        "chunk_id": "C002",
+        "document": "academic_calendar.txt",
+        "text": "Students should check the academic calendar for semester commencement dates."
+    },
+    {
+        "chunk_id": "C003",
+        "document": "academic_calendar.txt",
+        "text": "The academic calendar also contains examination periods and important academic activities."
+    },
+    {
+        "chunk_id": "C004",
+        "document": "attendance.txt",
+        "text": "ATTENDANCE INFORMATION Students are required to maintain a minimum attendance of 75 percent."
+    },
+    {
+        "chunk_id": "C005",
+        "document": "attendance.txt",
+        "text": "Students should regularly check their attendance records."
+    },
+    {
+        "chunk_id": "C006",
+        "document": "attendance.txt",
+        "text": "Students whose attendance is below the required percentage may be subject to institutional rules."
+    },
+    {
+        "chunk_id": "C007",
+        "document": "examination.txt",
+        "text": "EXAMINATION INFORMATION Students must carry their valid college identity card when attending examinations."
+    },
+    {
+        "chunk_id": "C008",
+        "document": "examination.txt",
+        "text": "Students should report to the examination hall before the scheduled examination time."
+    },
+    {
+        "chunk_id": "C009",
+        "document": "examination.txt",
+        "text": "Students must follow all examination instructions."
+    },
+    {
+        "chunk_id": "C010",
+        "document": "fees.txt",
+        "text": "FEES INFORMATION Semester fee payment deadline is 15 October."
+    },
+    {
+        "chunk_id": "C011",
+        "document": "fees.txt",
+        "text": "Students can pay semester fees through the college online payment portal."
+    },
+    {
+        "chunk_id": "C012",
+        "document": "fees.txt",
+        "text": "Students should keep the payment receipt after successful payment."
+    },
+    {
+        "chunk_id": "C013",
+        "document": "fees.txt",
+        "text": "For fee-related queries, students should contact the accounts office."
+    },
+    {
+        "chunk_id": "C014",
+        "document": "hostel.txt",
+        "text": "HOSTEL INFORMATION The college provides hostel facilities for students."
+    },
+    {
+        "chunk_id": "C015",
+        "document": "hostel.txt",
+        "text": "Students staying in the hostel must follow the hostel rules and regulations."
+    },
+    {
+        "chunk_id": "C016",
+        "document": "hostel.txt",
+        "text": "Students should maintain cleanliness in hostel facilities."
+    },
+    {
+        "chunk_id": "C017",
+        "document": "hostel.txt",
+        "text": "Visitors must follow the hostel visitor procedures."
+    },
+    {
+        "chunk_id": "C018",
+        "document": "library.txt",
+        "text": "LIBRARY INFORMATION Students can use the college library to access academic books and learning resources."
+    },
+    {
+        "chunk_id": "C019",
+        "document": "library.txt",
+        "text": "Students should return borrowed books within the specified period."
+    },
+    {
+        "chunk_id": "C020",
+        "document": "library.txt",
+        "text": "Students must follow library rules and maintain silence inside the library."
+    },
+    {
+        "chunk_id": "C021",
+        "document": "placement.txt",
+        "text": "PLACEMENT INFORMATION Students interested in placement opportunities should register through the placement cell."
+    },
+    {
+        "chunk_id": "C022",
+        "document": "placement.txt",
+        "text": "Students should regularly check placement announcements."
+    },
+    {
+        "chunk_id": "C023",
+        "document": "placement.txt",
+        "text": "Students must satisfy the eligibility requirements specified for individual companies."
+    },
+    {
+        "chunk_id": "C024",
+        "document": "library_test.txt.txt",
+        "text": "The college library closes at 7 PM on weekdays."
+    },
+    {
+        "chunk_id": "C025",
+        "document": "sam3.txt",
+        "text": "The computer lab closes at 6 PM on weekdays."
+    },
+    {
+        "chunk_id": "C026",
+        "document": "samp2.txt",
+        "text": "college will end at 4.50 pm"
+    }
+]
