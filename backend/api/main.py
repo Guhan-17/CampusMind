@@ -17,7 +17,7 @@ from pathlib import Path
 from datetime import datetime
 import shutil
 
-from backend.retrieval.hybrid_search import HybridSearch
+from backend.retrieval.bm25_search import BM25Search
 from backend.generation.rag_generator import RAGGenerator
 
 from backend.auth import (
@@ -28,7 +28,6 @@ from backend.auth import (
 )
 
 from backend.process_documents import process_documents
-from backend.create_vector_db import create_vector_db
 
 
 # ============================================================
@@ -48,13 +47,8 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:5174",
-        "http://127.0.0.1:5174",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -76,7 +70,10 @@ UPLOAD_DIR.mkdir(
 # RAG SYSTEM
 # ============================================================
 
-retriever = HybridSearch()
+# Render Free-friendly retrieval
+# Uses BM25 instead of SentenceTransformer + PyTorch.
+
+retriever = BM25Search()
 generator = RAGGenerator()
 
 
@@ -239,27 +236,19 @@ def rebuild_knowledge_base():
     # 1. Process documents
     # --------------------------------------------------------
 
-    print("\n[1/3] Processing documents...")
+    print("\n[1/2] Processing documents...")
 
     process_documents()
 
     # --------------------------------------------------------
-    # 2. Rebuild vector database
-    # --------------------------------------------------------
-
-    print("\n[2/3] Creating vector database...")
-
-    create_vector_db()
-
-    # --------------------------------------------------------
-    # 3. Reload retriever
+    # 2. Reload BM25 retriever
     # --------------------------------------------------------
 
     global retriever
 
-    print("\n[3/3] Reloading hybrid retriever...")
+    print("\n[2/2] Reloading BM25 retriever...")
 
-    retriever = HybridSearch()
+    retriever = BM25Search()
 
     print("\n==========================================")
     print("KNOWLEDGE BASE UPDATED SUCCESSFULLY")
