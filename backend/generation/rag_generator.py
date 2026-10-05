@@ -14,7 +14,7 @@ class RAGGenerator:
 
         self.url = "https://api.groq.com/openai/v1/chat/completions"
 
-        self.model = "llama-3.1-8b-instant"
+        self.model = "openai/gpt-oss-20b"
 
         if not self.api_key:
             raise ValueError(
