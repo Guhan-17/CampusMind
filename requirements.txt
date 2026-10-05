@@ -6,3 +6,4 @@ requests
 chromadb
 rank-bm25
 pypdf
+python-jose
