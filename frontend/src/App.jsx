@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000";
-
+const API_URL = "https://campusmind-d9yi.onrender.com";
 const suggestedQuestions = [
   "When should I pay my college fees?",
   "How can I pay my semester fees?",
